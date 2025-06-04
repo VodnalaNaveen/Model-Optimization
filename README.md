@@ -43,7 +43,7 @@ This project demonstrates how to **compress** and **quantize** a Keras model to 
 
 ├── quantize_model.py # Perform post-training quantization using TFLite
 
-├── evaluate.ipynb # Evaluate performance of all three model versions
+├── evaluate.py # Evaluate performance of all three model versions
 
 └── README.md # Project documentation
 
@@ -58,7 +58,11 @@ Each script can be executed using command-line parser arguments:
 python compress_model.py --weights_path 'normal.h5' --compressed_model_path 'C:\Users\vodna\OneDrive\Desktop\inno\DL\compresed_model'
 python quantize_model.py --weights_path 'normal.h5' --quantized_model_path 'C:\Users\vodna\OneDrive\Desktop\inno\DL\compresed_model'
 ```
+Evaluate performance of all three model
 
+```
+python evaluate.py --normal_model_path "normal.h5"  --compressed_model_path "normal_compressed.tflite"  --quantized_model_path "normal_quantized_compressed.tflite"  --data_path "data.csv"  --no_prediction 149
+```
 
 ## 📚 References
 
