@@ -25,11 +25,12 @@ This project demonstrates how to **compress** and **quantize** a Keras model to 
 
 ## 📊 Results
 
-| Metric         | Original Model | Compressed Model | Quantized Model |
+| Metric         | Normal Model | Compressed Model | Quantized Model |
 |----------------|----------------|------------------|------------------|
-| Model Size     | 33kb            | 3kb              | 3kb              |
-| Accuracy       | TBD            | TBD              | TBD              |
-| Inference Time | TBD            | TBD              | TBD              |
+| Model Size     | 33kb            | 3kb              | 4kb              |
+| Accuracy       | 95%            | 51%              | 61%              |
+| Loss       | 0.2070            | 1.1449              | 0.6830              |
+| Inference Time | 11.9768 sec            | 0.0012 sec              | 0.0042 sec              |
 | Weight Dtype   | `float32`      | `float32`        | `int8`           |
 
 ---
